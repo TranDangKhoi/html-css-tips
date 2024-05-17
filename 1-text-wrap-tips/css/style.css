@@ -1,0 +1,24 @@
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background-color: #ecf1f8;
+}
+
+.card {
+  display: grid;
+  width: 600px;
+  gap: clamp();
+}
+
+.card-left {
+  width: 200px;
+  height: 200px;
+  overflow: clip;
+}
+
+@media (width > 500px) {
+  .card {
+    grid-template-columns: 200px 1fr;
+  }
+}
